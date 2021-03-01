@@ -1,7 +1,3 @@
-/**
- * @format
- */
-
 import { AppRegistry, StyleSheet, View, Image } from 'react-native';
 import React, { useState } from 'react'
 import { name as appName } from './app.json';

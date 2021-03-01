@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import { View, Text, StyleSheet, ScrollView, Image, TouchableOpacity } from 'react-native'
 import PropTypes from 'prop-types';
 
-const ListWithHeader = (props) => {
+type ListWithHeaderProps = {}
+
+const ListWithHeader = (props: ListWithHeaderProps) => {
   return (
     <View style={styles.container}>
-      <Image style={styles.userAvartar} source={'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=906509900,1829660552&fm=26&gp=0.jpg'} />
+      <Image style={styles.userAvartar} source={{ uri: 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=906509900,1829660552&fm=26&gp=0.jpg' }} />
       <TouchableOpacity style={styles.messageContainer} activeOpacity={1} onPress={() => { console.log('%cListWithHeader.js line:9 111', 'color: #007acc;', 111); }}>
         <View style={styles.messageContent}>
           <View style={styles.messageTop}>

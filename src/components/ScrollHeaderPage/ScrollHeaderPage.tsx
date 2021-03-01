@@ -2,9 +2,7 @@ import React, { useState } from 'react'
 import { View, Text, StyleSheet, ScrollView } from 'react-native'
 import PropTypes from 'prop-types';
 
-
-
-const ScrollHeaderPage = (props) => {
+const ScrollHeaderPage = (props: any) => {
   return (
     <View style={styles.container}>
       <View style={styles.headerContainer}>
@@ -31,7 +29,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   headerFont: {
     fontSize: 18,
